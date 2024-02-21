@@ -5,14 +5,13 @@ local M = {
   },
 }
 
-
 function M.config()
   local servers = {
     "lua_ls",
     "cssls",
     "html",
     "tsserver",
-    "pyright",
+--    "pyright",
     "bashls",
     "jsonls",
     "gopls",
