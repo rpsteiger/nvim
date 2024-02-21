@@ -121,6 +121,7 @@ function M.config()
     local require_ok, settings = pcall(require, "user.lspsettings." .. server)
     if require_ok then
       opts = vim.tbl_deep_extend("force", settings, opts)
+      opts.capabilities = M.common_capabilities()
     end
 
     if server == "lua_ls" then
