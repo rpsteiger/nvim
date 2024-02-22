@@ -14,6 +14,12 @@ keymap("n", "<m-k>", "<C-w>k", opts)
 keymap("n", "<m-l>", "<C-w>l", opts)
 keymap("n", "<m-tab>", "<c-6>", opts)
 
+-- tmux like window navigation
+keymap("n", "<C-j>", "<cmd>NvimTmuxNavigateDown<CR>", opts)
+keymap("n", "<C-h>", "<cmd>NvimTmuxNavigateLeft<CR>", opts )
+keymap("n", "<C-l>", "<cmd>NvimTmuxNavigateRight<CR>", opts)
+keymap("n", "<C-k>", "<cmd>NvimTmuxNavigateUp<CR>", opts)
+
 keymap("n", "n", "nzz", opts)
 keymap("n", "N", "Nzz", opts)
 keymap("n", "*", "*zz", opts)
